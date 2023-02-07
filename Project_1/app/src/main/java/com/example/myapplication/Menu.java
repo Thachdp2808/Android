@@ -51,7 +51,7 @@ public class Menu extends AppCompatActivity {
                     if(input_coffe.getText().toString().equals("")){
                         a=1;
                     }else {
-                        a=Integer.parseInt(input_coffe.getText().toString());
+                        a = Integer.parseInt(input_coffe.getText().toString());
                     }
 
 
