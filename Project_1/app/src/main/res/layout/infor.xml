@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/ttcn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF0000"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:textSize="30dp"
+        android:text="THÔNG TIN CÁ NHÂN"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="#FFFF33"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:text="Họ tên"
+        app:layout_constraintTop_toBottomOf="@+id/ttcn"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="#339933"
+        app:layout_constraintTop_toBottomOf="@+id/ttcn"
+        app:layout_constraintLeft_toRightOf="@+id/name"
+        />
+
+    <TextView
+        android:id="@+id/cmtnd"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF0066"
+        android:textSize="30dp"
+        android:text="CMTND"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/input_cmtnd"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#339933"
+        app:layout_constraintTop_toBottomOf="@+id/input_name"
+        app:layout_constraintLeft_toRightOf="@+id/cmtnd"
+        />
+
+    <TextView
+        android:id="@+id/sothich"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:background="#339933"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="SỞ THÍCH"
+        app:layout_constraintTop_toBottomOf="@id/input_cmtnd"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    --Sothich
+    <CheckBox
+        android:id="@+id/c_read"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="20dp"
+        android:text="Đọc sách"
+        app:layout_constraintTop_toBottomOf="@+id/sothich"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/c_game"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="Chơi game"
+        app:layout_constraintTop_toBottomOf="@+id/sothich"
+        app:layout_constraintLeft_toRightOf="@+id/c_read"/>
+
+    <CheckBox
+        android:id="@+id/hat"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="Hát"
+        app:layout_constraintTop_toBottomOf="@+id/sothich"
+        app:layout_constraintLeft_toRightOf="@+id/c_game"/>
+
+    --bangcap
+    <TextView
+        android:id="@+id/bangcap"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:background="#339933"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="BẰNG CẤP"
+        app:layout_constraintTop_toBottomOf="@id/c_game"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <RadioButton
+        android:id="@+id/r_uni"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="Đại học"
+        app:layout_constraintTop_toBottomOf="@+id/bangcap"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <RadioButton
+        android:id="@+id/r_CD"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="Cao Đẳng"
+        app:layout_constraintTop_toBottomOf="@+id/bangcap"
+        app:layout_constraintLeft_toRightOf="@+id/r_uni"/>
+
+    <RadioButton
+        android:id="@+id/r_PT"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="Phổ Thông"
+        app:layout_constraintTop_toBottomOf="@+id/bangcap"
+        app:layout_constraintLeft_toRightOf="@+id/r_CD"/>
+
+    --
+    <TextView
+        android:id="@+id/ttbs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#339933"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:text="THÔNG TIN BỔ SUNG"
+        app:layout_constraintTop_toBottomOf="@id/r_CD"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/bomon"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:text="Bộ môn"
+        app:layout_constraintTop_toBottomOf="@+id/ttbs"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/input_bomon"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000FF"
+        app:layout_constraintTop_toBottomOf="@+id/ttbs"
+        app:layout_constraintLeft_toRightOf="@+id/bomon"
+        />
+
+    <TextView
+        android:id="@+id/khoa"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Khoa CNTT - UTEHY"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/input_bomon"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Gửi thông tin"
+        android:backgroundTint="#FF0066"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/khoa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

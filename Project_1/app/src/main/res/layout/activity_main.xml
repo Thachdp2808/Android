@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Thạch!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/input_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    --1--
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:gravity="left|center"
+
+        android:text="Tài khoản: "
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/input_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    --2--
+
+    <EditText
+        android:id="@+id/input_login"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:hint="Tài khoản"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="left|center"
+        android:text="Mật khẩu:"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/input_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/input_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_login" />
+
+    <Button
+        android:id="@+id/dangnhap"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="103dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+    <TextView
+        android:id="@+id/tvbt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/dangnhap"
+        app:layout_constraintLeft_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

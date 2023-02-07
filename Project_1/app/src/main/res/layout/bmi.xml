@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFF00"
+
+        android:text="CHƯƠNG TRÌNH TÍNH CHỈ SỐ BMI"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    --1-
+    <TextView
+        android:id="@+id/height1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left|center"
+        android:text="Chiều Cao(m): "
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toRightOf="@+id/height1"
+        />
+
+    --2
+    <TextView
+        android:id="@+id/height2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left|center"
+        android:text="Cân nặng(kg): "
+        app:layout_constraintTop_toBottomOf="@+id/height1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/edit1"
+        app:layout_constraintLeft_toRightOf="@+id/height2"
+        />
+
+    <Button
+        android:id="@+id/bmiCal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"
+        android:text="Tính chỉ số BMI"
+        app:layout_constraintTop_toBottomOf="@id/edit2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    --1.1-
+    <TextView
+        android:id="@+id/chiso"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left|center"
+        android:text="Chỉ số BMI: "
+        app:layout_constraintTop_toBottomOf="@+id/bmiCal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/input_chiso"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/bmiCal"
+        app:layout_constraintLeft_toRightOf="@+id/chiso"
+        />
+
+    --2.1
+    <TextView
+        android:id="@+id/danhgia"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left|center"
+        android:text="Đánh giá: "
+        app:layout_constraintTop_toBottomOf="@+id/chiso"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/input_danhgia"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/input_chiso"
+        app:layout_constraintLeft_toRightOf="@+id/danhgia"
+        />
+    --3
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@id/input_danhgia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="Next"
+        app:layout_constraintTop_toBottomOf="@id/input_danhgia"
+        app:layout_constraintLeft_toRightOf="@+id/button1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
