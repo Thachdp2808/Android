@@ -51,7 +51,7 @@ public class Menu extends AppCompatActivity {
                     if(input_coffe.getText().toString().equals("")){
                         a=1;
                     }else {
-                        a	=	Integer.parseInt(input_coffe.getText().toString());
+                        a=Integer.parseInt(input_coffe.getText().toString());
                     }
 
 
@@ -61,7 +61,7 @@ public class Menu extends AppCompatActivity {
                     if(input_nepcam.getText().toString().equals("")){
                         b=1;
                     }else {
-                        b	=	Integer.parseInt(input_nepcam.getText().toString());
+                        b=Integer.parseInt(input_nepcam.getText().toString());
                     }
 
                     tongtien+=b*12000;
@@ -70,7 +70,7 @@ public class Menu extends AppCompatActivity {
                     if(input_kem.getText().toString().equals("")){
                         c=1;
                     }else{
-                        c	=	Integer.parseInt(input_kem.getText().toString());
+                        c=Integer.parseInt(input_kem.getText().toString());
                     }
 
                     tongtien+=c*10000;
@@ -79,7 +79,7 @@ public class Menu extends AppCompatActivity {
                     if(input_bim.getText().toString().equals("")){
                         d=1;
                     }else{
-                        d	=	Integer.parseInt(input_bim.getText().toString());
+                        d=Integer.parseInt(input_bim.getText().toString());
                     }
 
                     tongtien+=d*5000;
@@ -88,7 +88,7 @@ public class Menu extends AppCompatActivity {
                     if(input_suachua.getText().toString().equals("")){
                         e=1;
                     }else{
-                        e	=	Integer.parseInt(input_suachua.getText().toString());
+                        e=Integer.parseInt(input_suachua.getText().toString());
                     }
 
                     tongtien+=e*6000;
